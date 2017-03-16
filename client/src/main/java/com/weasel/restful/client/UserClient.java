@@ -34,6 +34,7 @@ public class UserClient {
 
         HttpGet get = new HttpGet("http://127.0.0.1:8010/restful/user/1");
         get.setHeader("Accept","application/json");
+        get.addHeader("version","1.0");
         String result = execute(get);
         System.out.println(result);
     }
