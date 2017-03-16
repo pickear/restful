@@ -1,0 +1,4 @@
+###jetty
+server:
+   port: 8010
+   contextPath: /restful
