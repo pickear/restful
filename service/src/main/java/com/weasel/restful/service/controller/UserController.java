@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @ResponseBody
-    @RequestMapping(value = {"/{id}"},method = RequestMethod.GET,produces = {"application/json;charset=utf-8"},headers = {"Accept=application/json"})
+    @RequestMapping(value = {"/{id}"},method = RequestMethod.GET,produces = {"application/json;charset=utf-8"},headers = {"Accept=application/json","version=1.0"})
     public User user(@PathVariable("id") long id,HttpServletRequest request){
         return new User(id);
     }
